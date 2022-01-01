@@ -5,8 +5,8 @@
  */
 
 export const AppConfig = {
-  site_name: "Rosie",
-  title: "Rosie",
-  description: "Rosie: your React assistant",
+  site_name: "Aman Jha",
+  title: "Aman Jha",
+  description: "Aman Jha - Full Stack Next.js Freelancer",
   locale: "en",
 };
