@@ -2,8 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import HomepageLayout from "../layout/HomepageLayout";
+import StandardLayout from "../layout/StandardLayout";
 import Meta from "../layout/Meta";
+import { ReactElement } from "react";
 
 const Home = () => {
   return <h1 className="text-3xl font-bold underline"> Hello world! </h1>;
@@ -13,7 +14,7 @@ const Home = () => {
 Home.getLayout = (page: ReactElement) => {
   return (
     // Attach the Landing layout with a meta component, decide on header/footer
-    <HomepageLayout
+    <StandardLayout
       meta={
         <Meta
           title="Rosie"
@@ -24,7 +25,7 @@ Home.getLayout = (page: ReactElement) => {
       footerActive={true}
     >
       {page}
-    </HomepageLayout>
+    </StandardLayout>
   );
 };
 

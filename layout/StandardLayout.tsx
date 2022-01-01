@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 
 // TODO: add fathom client, etc.
 
-type HomepageProps = {
+type StandardProps = {
   // Accept a Meta component (components/landing/Meta.tsx) from each page.
   meta: ReactNode;
   // The actual page itself. Must be named 'children'.
@@ -25,12 +25,12 @@ type HomepageProps = {
   footerActive: boolean;
 };
 
-export default function HomepageLayout({
+export default function StandardLayout({
   meta,
   children,
   headerActive,
   footerActive,
-}: HomepageProps): ReactElement {
+}: StandardProps): ReactElement {
   /*
         Meta component is passed in from the page
         Children is the page itself (react keyword)
