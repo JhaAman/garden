@@ -7,7 +7,32 @@ import Meta from "../layout/Meta";
 import { ReactElement } from "react";
 
 const Home = () => {
-  return <h1 className="text-3xl font-bold underline"> Hello world! </h1>;
+  return (
+    <>
+      {/* Hero */}
+
+      <div className="flex flex-row relative">
+        {/* Left */}
+        <div className="flex h-screen w-1/3 bg-primary-500 relative">
+          {/* A square box  */}
+          <div className="absolute top-1/4 left-1/2 z-10 w-96 h-96 ">
+            <Image
+              src="/static/profile.jpg"
+              alt="Aman"
+              layout="fill"
+              className="object-cover rounded-3xl"
+            />
+          </div>
+        </div>
+
+        {/* Right */}
+        <div className="flex min-h-screen flex-1 bg-bg relative"></div>
+
+        {/* /public/static/profile.png sits right in the middle of the two divs */}
+      </div>
+      <div className="bg-bg2 h-screen">heddo</div>
+    </>
+  );
 };
 
 // Attach the landing layout (and other nested layouts) to the page

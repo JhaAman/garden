@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          500: "#DA255B",
+        },
+        bg: "#242a34",
+        bg2: "#1d232d",
+      },
       fontFamily: {
         sans: ["IBM Plex Sans", ...fontFamily.sans],
       },
