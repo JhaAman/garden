@@ -26,7 +26,13 @@ const Home = () => {
         </div>
 
         {/* Right */}
-        <div className="flex min-h-screen flex-1 bg-bg relative"></div>
+        <div className="flex min-h-screen justify-center flex-1 bg-bg relative ">
+          <div className="flex flex-col items-end justify-center">
+            <h1 className="text-4xl ">Aman Jha</h1>
+            <h2 className="text-xl mt-2">Full Stack Freelancer</h2>
+            <h3 className="mt-2 opacity-80">Next.js. React. AWS. SQL.</h3>
+          </div>
+        </div>
 
         {/* /public/static/profile.png sits right in the middle of the two divs */}
       </div>
